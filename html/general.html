@@ -17,17 +17,49 @@
 </nav>
 
 <main>
-    <h2></h2>
+    <h2>個人情報入力</h2>
+
     <form action="#" method="post">
         <fieldset>
             <legend>お名前</legend>
         <div>
-            <label for="lastName">姓</label><br>
             <input id="lastName" name="lastName" type="text" placeholder="姓">
         </div>
+        <div>
+            <input id="firstName" name="firstName" type="text" placeholder="名">
+        </div>
         </fieldset>
+        <dev>
+            <label for="bio">自己紹介</label><br>
+            <textarea id="bio" name="bio" rows="3"></textarea>
+        </dev>
+        <p><strong>aaaa aaaa aaaa</strong><br>aaaa aaaa aaaa<br>aaaa aaaa aaaa</p>
+
+        <div>
+            <label for="blood">血液型</label><br>
+            <select id="blood" name="blood">
+                <option value="">血液型</option>
+                <option value="A">A型</option>
+                <option value="B">B型</option>
+                <option value="O">O型</option>
+                <option value="AB">AB型</option>
+                <option value="unknown">不明</option>
+            </select>
+        </div>
+        <fieldset>
+            <legend>性別</legend>
+            <label><input type="radio" name="gender" value="male">男</label>
+            <label><input type="radio" name="gender" value="famale" checked>女</label>
+        </fieldset>
+
+        <div>
+            <button type="reset" disabled>キャンセル</button>
+            <button type="submit">送信</button>
+        </div>
     </form>
 </main>
-
+<footer>
+    @ 2019 ALCHEMY inc.
+</footer>
 </body>
 </html>
